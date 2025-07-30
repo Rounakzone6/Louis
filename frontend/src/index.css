@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.accordion {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-item {
+  border-top: 1px solid rgb(177, 175, 175);
+  cursor: pointer;
+}
+
+.accordion-item-title {
+  margin: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 12px;
+  color: gray;
+}
+
+.accordion-item-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  font-size: 10px;
+  padding: 0 0.5rem;
+}
+
+.accordion-item-content.open {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.5rem;
+}
+
+.accordion-item-content.close {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 0.5rem;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid gray;
+}
+
+
