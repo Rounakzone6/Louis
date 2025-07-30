@@ -25,7 +25,7 @@ const Footer = () => {
           <p className="text-center text-2xl font-medium py-2">LOUIS VUITTON</p>
           <AccordionSection handleShow={handleShow} />
         </div>
-        <div className="hidden md:flex justify-between">
+        <div className="hidden md:flex text-sm justify-between">
           <ul className="px-4 max-w-[24vw] flex flex-col gap-2">
             <li className="font-light mb-2">HELP</li>
             <li>
